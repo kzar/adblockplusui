@@ -45,6 +45,12 @@ export default {
           // marked as optional using wildcard
           "vendor/abp-snippets/dist/ml/bundle*.ml.mjs"
         ]
+      },
+      {
+        dest: "composer.preload.js",
+        src: [
+          "adblockpluschrome/composer.preload.js"
+        ]
       }
     ]
   },
@@ -93,7 +99,6 @@ export default {
           // marked as optional using wildcard
           "vendor/abp-snippets/dist/webext/snippets*.json",
           "adblockpluschrome/devtools.*",
-          "adblockpluschrome/composer.preload.js",
           "!polyfill.js",
           "!mobile-options.*"
         ]
